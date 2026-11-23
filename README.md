@@ -2,7 +2,9 @@
 
 A Chinese classical-style daily brief summarising the top world news of 23 November 2026.
 The image `news-20261123.jpg` (683×1024) is the entry; `main.py` outputs it
-deterministically. The news text on the image is in English.
+deterministically. The news text on the image is in English. Layout is hierarchical:
+the lead story (Nvidia) gets a large central headline with a sharp commentary,
+the other stories appear in smaller type, and the smallest item sits in a corner.
 
 ## The 7 stories
 

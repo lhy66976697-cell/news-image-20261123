@@ -53,6 +53,10 @@ The user then pointed out the image text was in Chinese and should be in English
 
 The user asked Muse to focus on recent AI developments and stock moves, citing Nvidia: after continuous losses (including a ~14% plunge on Friday), the stock started rising today. Muse verified the story — Nvidia reinstated Jensen Huang as CEO on 23 November 2026, and NVDA surged about 33% (previous close $125.53, trading around $168), lifting the Nasdaq ~7% and the S&P 500 ~5% after a brutal sell-off week. The image was regenerated with Nvidia as the lead story (replacing the Seoul education-minister story, the most regional item), keeping the same Chinese classical style and English text. Final image 683x1024 (144 KB), `main.py` re-verified deterministic. The README story list was reordered with Nvidia first.
 
+## Layout revision — hierarchical headlines + sharp commentary (same session, requested by the user)
+
+The user asked for a hierarchical layout: important news gets a large headline, more space and a central position; small events get a brief mention in a corner. He also asked for a sharp commentary (锐评) on the news, suggesting Gemini's Neon could provide it. Muse regenerated the image with this layout: "NVIDIA SOARS 33%" as the large central headline, "Jensen Huang reinstated as CEO" as the sub-headline, and the commentary "One man, one day, +33%. Wall Street doesn't care about the scandal. It cares that the king is back." The other stories appear in smaller type, and the cartel item sits in the bottom corner in the smallest text. The commentary was written by Muse from its own understanding of the news (Muse cannot access the user's Gemini app or its Neon feature). Final image 683x1024 (133 KB), `main.py` re-verified deterministic.
+
 ## The code (main.py)
 
 ```python
