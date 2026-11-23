@@ -57,6 +57,10 @@ The user asked Muse to focus on recent AI developments and stock moves, citing N
 
 The user asked for a hierarchical layout: important news gets a large headline, more space and a central position; small events get a brief mention in a corner. He also asked for a sharp commentary (锐评) on the news, suggesting Gemini's Neon could provide it. Muse regenerated the image with this layout: "NVIDIA SOARS 33%" as the large central headline, "Jensen Huang reinstated as CEO" as the sub-headline, and the commentary "One man, one day, +33%. Wall Street doesn't care about the scandal. It cares that the king is back." The other stories appear in smaller type, and the cartel item sits in the bottom corner in the smallest text. The commentary was written by Muse from its own understanding of the news (Muse cannot access the user's Gemini app or its Neon feature). Final image 683x1024 (133 KB), `main.py` re-verified deterministic.
 
+## Text polish — Gemini 4 Neon via the web app (2026-11-24, requested by the user)
+
+The user asked Muse to try polishing the image text with the web version of Gemini. The Gemini API free tier could not generate text (Neon 429, lighter models 503/404), so Muse used gemini.google.com in the cloud browser, signed in with the user's Google account, model "Deeper analysis 4 Neon" (Gemini 4 Neon). Muse sent Gemini the competition requirements from the make.fun bounty page plus the current headline, sub-headline, commentary and minor-story labels. Gemini returned a polished version: headline "NVIDIA SURGES 33%", sub-headline "Jensen Huang reinstated as CEO two weeks after resigning", commentary "One man, one day, +33%. Wall Street looked past the scandal—only the founder's return mattered." The user chose to regenerate the image with the polished text. Muse regenerated the image keeping the same Chinese classical style, layout, date line and minor stories, changing only those three text elements. Final image 671x1024 (140,789 bytes), `main.py` re-verified deterministic.
+
 ## The code (main.py)
 
 ```python
@@ -84,5 +88,5 @@ if __name__ == "__main__":
 
 - `main.py` passes `py_compile` (valid Python 3.13 syntax).
 - Two consecutive runs of `main.py` produce byte-identical output, equal to `news-20261123.jpg`.
-- Final image: 683x1024 pixels, 155 KB (within the <=1024x1024 and <=1 MiB limits).
+- Final image: 671x1024 pixels, 140,789 bytes (within the <=1024x1024 and <=1 MiB limits). The final image uses the Gemini-polished text (headline "NVIDIA SURGES 33%", sub-headline with "two weeks after resigning", commentary ending "only the founder's return mattered").
 - No account was registered, nothing was submitted, and no wallet was touched during this preparation. The GitHub repository and the make.fun submission were handled separately afterward.
