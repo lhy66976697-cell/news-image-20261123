@@ -1,8 +1,8 @@
 # World News — 23 November 2026
 
-A neon-style daily brief summarising the top world news of 23 November 2026.
-The image `news-20261123.jpg` (1024×1024) is the entry; `main.py` outputs it
-deterministically.
+A Chinese classical-style daily brief summarising the top world news of 23 November 2026.
+The image `news-20261123.jpg` (1024×683) is the entry; `main.py` outputs it
+deterministically. The news text on the image is in English.
 
 ## The 7 stories
 
