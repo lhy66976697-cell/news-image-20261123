@@ -49,6 +49,10 @@ The user reviewed the neon image and said it was too garish ("太晃眼") and as
 
 The user then pointed out the image text was in Chinese and should be in English ("应该要换成英文的新闻"), since the bounty is judged in English. Muse regenerated the image keeping the same Chinese classical visual style but with all news text in English (title "World News — November 23, 2026", seven stories in English). The final image is 1024x683 (158 KB). `main.py` was re-verified deterministic against the new image bytes. The README was updated to describe the Chinese classical style and the English text, and the image dimensions were corrected to 1024x683.
 
+## Content revision — Nvidia added (same session, requested by the user)
+
+The user asked Muse to focus on recent AI developments and stock moves, citing Nvidia: after continuous losses (including a ~14% plunge on Friday), the stock started rising today. Muse verified the story — Nvidia reinstated Jensen Huang as CEO on 23 November 2026, and NVDA surged about 33% (previous close $125.53, trading around $168), lifting the Nasdaq ~7% and the S&P 500 ~5% after a brutal sell-off week. The image was regenerated with Nvidia as the lead story (replacing the Seoul education-minister story, the most regional item), keeping the same Chinese classical style and English text. Final image 683x1024 (144 KB), `main.py` re-verified deterministic. The README story list was reordered with Nvidia first.
+
 ## The code (main.py)
 
 ```python
