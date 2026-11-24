@@ -1,5 +1,11 @@
 # World News — 23 November 2026
 
+[![make.fun · news-image-20261123](https://make.fun/badge/news-image-20261123.svg)](https://make.fun/bounty/news-image-20261123?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261123)
+[![rank](https://make.fun/badge/news-image-20261123/lhy66976697-cell/news-image-20261123/rank.svg)](https://make.fun/bounty/news-image-20261123/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261123)
+[![reward](https://make.fun/badge/news-image-20261123/lhy66976697-cell/news-image-20261123/reward.svg)](https://make.fun/bounty/news-image-20261123?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261123)
+
+Entered on [make.fun](https://make.fun/bounty/news-image-20261123) — "Sum up 23 November's world news in one image".
+
 A Chinese classical-style daily brief summarising the top world news of 23 November 2026.
 The image `news-20261123.jpg` (683×1024) is the entry; `main.py` outputs it
 deterministically. The news text on the image is in English. Layout is hierarchical:
